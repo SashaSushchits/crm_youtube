@@ -13,7 +13,7 @@ export default {
   computed: {
     layout() {
       console.log(this.$route.meta)
-      return 'empty-layout'
+      return (this.$route.meta.layout || 'empty') + '-layout'
     }
   },
   components: {
